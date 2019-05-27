@@ -1,14 +1,1 @@
-'use strict';
-var currentLogo = 1;
-var color = 'white';
-function changeLogo(){
-  var logo = document.getElementById('logo').style;
-  if (currentLogo == 3) {
-    logo.backgroundImage = "url('Sources/logo-1_" + color + ".svg')";
-    currentLogo = 1;
-  }else{
-    currentLogo++;
-    logo.backgroundImage = "url('Sources/logo-"+ currentLogo +"_" + color + ".svg')";
-  }
-}
-var timer = setInterval(changeLogo, 1000);
+var timer = setInterval(function(){document.getElementById('logo').style.backgroundImage="url('Sources/logo-"+Math.round(Math.random()*2.5 + 0.5)+"_white.svg')"},1000);
