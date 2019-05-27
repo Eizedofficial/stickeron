@@ -1,0 +1,44 @@
+﻿ID,Тип,Артикул,Имя,Опубликован,рекомендуемый?,"Видимость в каталоге","Короткое описание",Описание,"Дата начала действия продажной цены","Дата окончания действия продажной цены","Статус налога","Налоговый класс","В наличии?",Запасы,"Задержанный заказ возможен?","Продано индивидуально?","Вес (g)","Длина (mm)","Ширина (mm)","Высота (mm)","Разрешить обзоры от клиентов?","Примечание к покупке","Цена распродажи","Базовая цена",Категории,Метки,"Класс доставки",Изображения,"Лимит загрузок","Число дней до просроченной загрузки",Родительский,"Сгруппированные продукты",Апсейл,Кросселы,"Внешний URL","Текст кнопки",Позиция,"Мета: _wpas_done_all"
+27,simple,,"Ничто не вечно",1,0,visible,,,,,taxable,,1,,0,0,,,,,0,,,29,,,,http://stickeronshop.ru/wp-content/uploads/2017/11/Х1.png,,,,,,,,,0,1
+37,simple,,"Certified AWPer",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > ￼Team Roles",,,http://stickeronshop.ru/wp-content/uploads/2017/11/002.png,,,,,,,,,0,1
+39,simple,,"Certified Fragger",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > ￼Team Roles",,,http://stickeronshop.ru/wp-content/uploads/2017/11/003.png,,,,,,,,,0,1
+42,simple,,"Certified Leader",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > ￼Team Roles",,,http://stickeronshop.ru/wp-content/uploads/2017/11/004.png,,,,,,,,,0,1
+47,simple,,"Certified Lurker",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > ￼Team Roles",,,http://stickeronshop.ru/wp-content/uploads/2017/11/005.png,,,,,,,,,0,1
+48,simple,,"Certified Support",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > ￼Team Roles",,,http://stickeronshop.ru/wp-content/uploads/2017/11/006.png,,,,,,,,,0,1
+50,simple,,"Certified Bomber",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > ￼Team Roles",,,http://stickeronshop.ru/wp-content/uploads/2017/11/007.png,,,,,,,,,0,1
+51,simple,,"Certified Ninja",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > ￼Team Roles",,,http://stickeronshop.ru/wp-content/uploads/2017/11/008.png,,,,,,,,,0,1
+57,simple,,"Certified Bot",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,60,0,,,29,"CSGO > ￼Team Roles",,,http://stickeronshop.ru/wp-content/uploads/2017/11/009.png,,,,,,,,,0,1
+59,simple,,"Certified Pro",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > ￼Team Roles",,,http://stickeronshop.ru/wp-content/uploads/2017/11/010.png,,,,,,,,,0,1
+60,simple,,"Certified 'Nader",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > ￼Team Roles",,,http://stickeronshop.ru/wp-content/uploads/2017/11/011.png,,,,,,,,,0,1
+61,simple,,"Certified Baiter",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > ￼Team Roles",,,http://stickeronshop.ru/wp-content/uploads/2017/11/012.png,,,,,,,,,0,1
+65,simple,,"Molotov Cock",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > cocks",,,http://stickeronshop.ru/wp-content/uploads/2017/11/013.png,,,,,,,,,0,1
+67,simple,,"Bomb Cock",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > cocks",,,http://stickeronshop.ru/wp-content/uploads/2017/11/014.png,,,,,,,,,0,1
+69,simple,,"Smoke Cock",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > cocks",,,http://stickeronshop.ru/wp-content/uploads/2017/11/015.png,,,,,,,,,0,1
+71,simple,,"Terrorist Cock",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > cocks",,,http://stickeronshop.ru/wp-content/uploads/2017/11/016.png,,,,,,,,,0,1
+73,simple,,"Knify Cock",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > cocks",,,http://stickeronshop.ru/wp-content/uploads/2017/11/017.png,,,,,,,,,0,1
+75,simple,,"Defuse Cock",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > cocks",,,http://stickeronshop.ru/wp-content/uploads/2017/11/018.png,,,,,,,,,0,1
+78,simple,,"Reload Cock",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > cocks",,,http://stickeronshop.ru/wp-content/uploads/2017/11/019.png,,,,,,,,,0,1
+80,simple,,"Defuse Cock #2",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > cocks",,,http://stickeronshop.ru/wp-content/uploads/2017/11/020.png,,,,,,,,,0,1
+82,simple,,"CT Cock",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > cocks",,,http://stickeronshop.ru/wp-content/uploads/2017/11/021.png,,,,,,,,,0,1
+84,simple,,"Granade Cock",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > cocks",,,http://stickeronshop.ru/wp-content/uploads/2017/11/022.png,,,,,,,,,0,1
+86,simple,,"Counter Terrorist",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > Community Stickers",,,http://stickeronshop.ru/wp-content/uploads/2017/11/001.png,,,,,,,,,0,1
+107,simple,,Kimberly,1,0,visible,,,,,taxable,,1,,0,0,5,60,,,0,,,29,"CSGO > ￼Pinups",,,http://stickeronshop.ru/wp-content/uploads/2017/11/025.png,,,,,,,,,0,1
+111,simple,,Marietta,1,0,visible,,,,,taxable,,1,,0,0,5,60,,,0,,,29,"CSGO > ￼Pinups",,,http://stickeronshop.ru/wp-content/uploads/2017/11/023.png,,,,,,,,,0,1
+112,simple,,Sherry,1,0,visible,,,,,taxable,,1,,0,0,5,60,,,0,,,29,"CSGO > ￼Pinups",,,http://stickeronshop.ru/wp-content/uploads/2017/11/026.png,,,,,,,,,0,1
+114,simple,,Yvette,1,0,visible,,,,,taxable,,1,,0,0,5,60,,,0,,,29,"CSGO > ￼Pinups",,,http://stickeronshop.ru/wp-content/uploads/2017/11/024.png,,,,,,,,,0,1
+116,simple,,Tamara,1,0,visible,,,,,taxable,,1,,0,0,5,60,,,0,,,29,"CSGO > ￼Pinups",,,http://stickeronshop.ru/wp-content/uploads/2017/11/027.png,,,,,,,,,0,1
+118,simple,,Martha,1,0,visible,,,,,taxable,,1,,0,0,5,60,,,0,,,29,"CSGO > ￼Pinups",,,http://stickeronshop.ru/wp-content/uploads/2017/11/028.png,,,,,,,,,0,1
+121,simple,,Boris,1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > ￼Sugarface",,,http://stickeronshop.ru/wp-content/uploads/2017/11/030.png,,,,,,,,,0,1
+123,simple,,Viggo,1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > ￼Sugarface",,,http://stickeronshop.ru/wp-content/uploads/2017/11/042.png,,,,,,,,,0,1
+125,simple,,Stan,1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > ￼Sugarface",,,http://stickeronshop.ru/wp-content/uploads/2017/11/032.png,,,,,,,,,0,1
+127,simple,,Perry,1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > ￼Sugarface",,,http://stickeronshop.ru/wp-content/uploads/2017/11/031.png,,,,,,,,,0,1
+129,simple,,John,1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > ￼Sugarface",,,http://stickeronshop.ru/wp-content/uploads/2017/11/029.png,,,,,,,,,0,1
+131,simple,,Max,1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > ￼Sugarface",,,http://stickeronshop.ru/wp-content/uploads/2017/11/033.png,,,,,,,,,0,1
+134,simple,,Jack,1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > ￼Sugarface",,,http://stickeronshop.ru/wp-content/uploads/2017/11/034.png,,,,,,,,,0,1
+136,simple,,Basilisk,1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > bestiary",,,http://stickeronshop.ru/wp-content/uploads/2017/11/040.png,,,,,,,,,0,1
+138,simple,,Sphinx,1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > bestiary",,,http://stickeronshop.ru/wp-content/uploads/2017/11/036.png,,,,,,,,,0,1
+140,simple,,"The Hippocampus",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > bestiary",,,http://stickeronshop.ru/wp-content/uploads/2017/11/035.png,,,,,,,,,0,1
+143,simple,,Dragon,1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > bestiary",,,http://stickeronshop.ru/wp-content/uploads/2017/11/041.png,,,,,,,,,0,1
+145,simple,,Manticore,1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > bestiary",,,http://stickeronshop.ru/wp-content/uploads/2017/11/038.png,,,,,,,,,0,1
+148,simple,,Pegasus,1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > bestiary",,,http://stickeronshop.ru/wp-content/uploads/2017/11/037.png,,,,,,,,,0,1
+150,simple,,"The Rebirth Of The Phoenix",1,0,visible,,,,,taxable,,1,,0,0,5,60,60,1,0,,,29,"CSGO > bestiary",,,http://stickeronshop.ru/wp-content/uploads/2017/11/039.png,,,,,,,,,0,1

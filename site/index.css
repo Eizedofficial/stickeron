@@ -1,0 +1,30 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+body{
+  background-color: #070811;
+}
+
+:root{
+  --border: 0.8px solid white;
+}
+
+header{
+  outline: var(--border);
+}
+
+.main-container{
+  width: 1440px;
+  margin: 0 auto;
+  outline: var(--border);
+}
+
+.logo{
+  background-image: url("Sources/logo-1_white.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 458px;
+  height: 80px;
+}

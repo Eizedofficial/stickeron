@@ -1,0 +1,37 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="Символ 1" itemID="5a5af9bc-00000028" lastModified="1515911612">
+  <timeline>
+    <DOMTimeline name="Символ 1">
+      <layers>
+        <DOMLayer name="Слой 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMShape isDrawingObject="true">
+                  <matrix>
+                    <Matrix a="1.66046142578125" d="1.66046142578125" tx="-201.5" ty="-198.6"/>
+                  </matrix>
+                  <transformationPoint>
+                    <Point x="127.35" y="121.95"/>
+                  </transformationPoint>
+                  <fills>
+                    <FillStyle index="1">
+                      <SolidColor color="#C4C4C4"/>
+                    </FillStyle>
+                  </fills>
+                  <edges>
+                    <Edge fillStyle1="1" edges="!2665 2440[2665 2460 2630 2473!2630 2473[2595 2487 2546 2487!2546 2487[2497 2487 2462 2473!2462 2473[2427 2460 2427 2440!2427 2440[2427 2420 2462 2406!2462 2406[2496 2392 2546 2392!2546 2392[2596 2392 2630 2406!2630 2406[2665 2420 2665
+ 2440"/>
+                    <Edge cubics="!2665 2440(;2665,2466 2612,2487 2546,2487q2665 2440Q2665 2460q2630 2473Q2595 2487q2546 2487);"/>
+                    <Edge cubics="!2546 2487(2546,2487;2480,2487 2427,2466 2427,2440q2546 2487Q2497 2487q2462 2473Q2427 2460q2427 2440);"/>
+                    <Edge cubics="!2427 2440(;2427,2413 2480,2392 2546,2392q2427 2440Q2427 2420q2462 2406Q2496 2392q2546 2392);"/>
+                    <Edge cubics="!2546 2392(2546,2392;2612,2392 2665,2413 2665,2440q2546 2392Q2596 2392q2630 2406Q2665 2420q2665 2440)2665,2440;"/>
+                  </edges>
+                </DOMShape>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

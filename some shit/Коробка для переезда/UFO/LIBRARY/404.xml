@@ -1,0 +1,29 @@
+<DOMSymbolItem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" name="404" itemID="5a5b18ed-00000127" lastModified="1515919603">
+  <timeline>
+    <DOMTimeline name="404">
+      <layers>
+        <DOMLayer name="Слой 1" color="#4F80FF" current="true" isSelected="true">
+          <frames>
+            <DOMFrame index="0" keyMode="9728">
+              <elements>
+                <DOMStaticText width="188.5" height="116.95">
+                  <matrix>
+                    <Matrix tx="-94.25" ty="-58.45"/>
+                  </matrix>
+                  <textRuns>
+                    <DOMTextRun>
+                      <characters>404</characters>
+                      <textAttrs>
+                        <DOMTextAttrs aliasText="false" lineHeight="116.95" size="96" bitmapSize="1920" face="ProximaNova-Extrabld" fillColor="#333333"/>
+                      </textAttrs>
+                    </DOMTextRun>
+                  </textRuns>
+                </DOMStaticText>
+              </elements>
+            </DOMFrame>
+          </frames>
+        </DOMLayer>
+      </layers>
+    </DOMTimeline>
+  </timeline>
+</DOMSymbolItem>

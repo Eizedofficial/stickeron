@@ -1,0 +1,192 @@
+<manifest alg="2" build="2018.0.0.379" opt="false" iceEnabled="false" exportTarget="other" domain="stickeronshop.ru" resolutions="1x" timestamp="1513702324772">
+  <folder name="css">
+    <file name="site_global.css" crc="4067026366"/>
+    <file name="master_______-b.css" crc="3865157202" ref="error"/>
+    <file name="master_______-a.css" crc="3801913026" ref="cart:shop:index:checkout:product:csgo:terms-and-conditions:my-account:тематики"/>
+    <file name="error.css" crc="207418058" ref="error"/>
+    <file name="cart.css" crc="4194220571" ref="cart"/>
+    <file name="shop.css" crc="3982966331" ref="shop"/>
+    <file name="index.css" crc="3777785862" ref="index"/>
+    <file name="checkout.css" crc="3763641757" ref="checkout"/>
+    <file name="product.css" crc="4016292596" ref="product"/>
+    <file name="csgo.css" crc="1021944" ref="csgo"/>
+    <file name="terms-and-conditions.css" crc="4175757350" ref="terms-and-conditions"/>
+    <file name="my-account.css" crc="492109392" ref="my-account"/>
+    <file name="________.css" crc="490352338" ref="тематики"/>
+  </folder>
+  <folder name="fonts">
+    <file name="ptm75f_w.woff" crc="3997096913"/>
+    <file name="ptm75f_w.eot" crc="350960831"/>
+    <file name="ptm75f_w.svg" crc="236149353"/>
+    <file name="proximanova-bold.woff" crc="302090406"/>
+    <file name="proximanova-bold.eot" crc="290681061"/>
+    <file name="proximanova-bold.svg" crc="374015294"/>
+    <file name="proximanova-semibold.woff" crc="436899973"/>
+    <file name="proximanova-semibold.eot" crc="4005768355"/>
+    <file name="proximanova-semibold.svg" crc="4155477368"/>
+    <file name="proximanova-regularit.woff" crc="339850886"/>
+    <file name="proximanova-regularit.eot" crc="328004551"/>
+    <file name="proximanova-regularit.svg" crc="4227061796"/>
+    <file name="proximanova-regular.woff" crc="4085938535"/>
+    <file name="proximanova-regular.eot" crc="423602956"/>
+    <file name="proximanova-regular.svg" crc="258820868"/>
+    <file name="sfuidisplay-heavy.woff" crc="292673020"/>
+    <file name="sfuidisplay-heavy.eot" crc="408672255"/>
+    <file name="sfuidisplay-heavy.svg" crc="3765818659"/>
+    <file name="proximanova-extrabld.woff" crc="470778479"/>
+    <file name="proximanova-extrabld.eot" crc="257170932"/>
+    <file name="proximanova-extrabld.svg" crc="466838700"/>
+  </folder>
+  <folder name="assets">
+    <file name="bomb.eps" crc="98192854" seo="true" mt="1509985296000"/>
+    <file name="scw1.svg" crc="3898151218" seo="true" mt="1513594756000"/>
+    <file name="shopping-basket-button.png" crc="3878565585" seo="true" mt="1466590292000"/>
+  </folder>
+  <folder name="scripts">
+    <file name="jquery-1.8.3.min.js" crc="209076791" ref="index:shop:product:my-account:cart:checkout:terms-and-conditions:error:тематики:csgo"/>
+    <file name="museutils.js" crc="3803043152" ref="index:shop:product:my-account:cart:checkout:terms-and-conditions:error:тематики:csgo"/>
+    <file name="whatinput.js" crc="86476730" ref="index:shop:product:my-account:cart:checkout:terms-and-conditions:error:тематики:csgo"/>
+    <file name="museconfig.js" crc="380897831" ref="index:shop:product:my-account:cart:checkout:terms-and-conditions:error:тематики:csgo"/>
+    <file name="jquery.watch.js" crc="99325471" ref="index:shop:product:my-account:cart:checkout:terms-and-conditions:error:тематики:csgo"/>
+    <file name="jquery.musemenu.js" crc="3784699396" ref="index:shop:product:my-account:cart:checkout:terms-and-conditions:тематики:csgo"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="4148998990" ref="index:csgo"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:shop:product:my-account:cart:checkout:terms-and-conditions:error:тематики:csgo"/>
+    <file name="require.js" crc="4157109226" ref="index:shop:product:my-account:cart:checkout:terms-and-conditions:error:тематики:csgo"/>
+    <file name="jquery.scrolleffects.js" crc="530399994" ref="csgo"/>
+  </folder>
+  <folder name="images">
+    <file name="favicon.ico" crc="4105444385" ref="index"/>
+    <file name="вставленные-svg-395317x68.svg" crc="410146546" seo="true" ref="index:shop:product:my-account:cart:checkout:terms-and-conditions:тематики:csgo">
+      <caption webpage="product" alt=""/>
+      <caption webpage="my-account" alt=""/>
+      <caption webpage="terms-and-conditions" alt=""/>
+      <caption webpage="csgo" alt=""/>
+      <caption webpage="тематики" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="checkout" alt=""/>
+      <caption webpage="cart" alt=""/>
+      <caption webpage="shop" alt=""/>
+    </file>
+    <file name="вставленные svg 395317x68_poster_.png" crc="3853361947" ref="index"/>
+    <file name="privet.jpg" crc="4166559731" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="прямоугольник 1.png" crc="3837315428" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="вставленные-svg-569419x98.svg" crc="3977668439" seo="true" ref="index:shop:product:my-account:cart:checkout:terms-and-conditions:тематики:csgo">
+      <caption webpage="product" alt=""/>
+      <caption webpage="my-account" alt=""/>
+      <caption webpage="terms-and-conditions" alt=""/>
+      <caption webpage="csgo" alt=""/>
+      <caption webpage="тематики" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="checkout" alt=""/>
+      <caption webpage="cart" alt=""/>
+      <caption webpage="shop" alt=""/>
+    </file>
+    <file name="вставленные svg 569419x98_poster_.png" crc="464596488" ref="index"/>
+    <file name="instagram-(2).svg" crc="4177069159" seo="true" ref="index:shop:product:my-account:cart:checkout:terms-and-conditions:тематики:csgo">
+      <caption webpage="product" alt=""/>
+      <caption webpage="my-account" alt=""/>
+      <caption webpage="terms-and-conditions" alt=""/>
+      <caption webpage="csgo" alt=""/>
+      <caption webpage="тематики" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="checkout" alt=""/>
+      <caption webpage="cart" alt=""/>
+      <caption webpage="shop" alt=""/>
+    </file>
+    <file name="instagram (2)_poster_.png" crc="4135739203" ref="index"/>
+    <file name="vk.svg" crc="261944569" seo="true" ref="index:shop:product:my-account:cart:checkout:terms-and-conditions:тематики:csgo">
+      <caption webpage="product" alt=""/>
+      <caption webpage="my-account" alt=""/>
+      <caption webpage="terms-and-conditions" alt=""/>
+      <caption webpage="csgo" alt=""/>
+      <caption webpage="тематики" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="checkout" alt=""/>
+      <caption webpage="cart" alt=""/>
+      <caption webpage="shop" alt=""/>
+    </file>
+    <file name="vk_poster_.png" crc="4088995689" ref="index"/>
+    <file name="youtube-(1).svg" crc="3919505306" seo="true" ref="index:shop:product:my-account:cart:checkout:terms-and-conditions:тематики:csgo">
+      <caption webpage="product" alt=""/>
+      <caption webpage="my-account" alt=""/>
+      <caption webpage="terms-and-conditions" alt=""/>
+      <caption webpage="csgo" alt=""/>
+      <caption webpage="тематики" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="checkout" alt=""/>
+      <caption webpage="cart" alt=""/>
+      <caption webpage="shop" alt=""/>
+    </file>
+    <file name="youtube (1)_poster_.png" crc="219666449" ref="index"/>
+    <file name="facebook-(1).svg" crc="4195701759" seo="true" ref="index:shop:product:my-account:cart:checkout:terms-and-conditions:тематики:csgo">
+      <caption webpage="product" alt=""/>
+      <caption webpage="my-account" alt=""/>
+      <caption webpage="terms-and-conditions" alt=""/>
+      <caption webpage="csgo" alt=""/>
+      <caption webpage="тематики" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="checkout" alt=""/>
+      <caption webpage="cart" alt=""/>
+      <caption webpage="shop" alt=""/>
+    </file>
+    <file name="facebook (1)_poster_.png" crc="196438838" ref="index"/>
+    <file name="telegram.svg" crc="296601201" seo="true" ref="index:shop:product:my-account:cart:checkout:terms-and-conditions:тематики:csgo">
+      <caption webpage="product" alt=""/>
+      <caption webpage="my-account" alt=""/>
+      <caption webpage="terms-and-conditions" alt=""/>
+      <caption webpage="csgo" alt=""/>
+      <caption webpage="тематики" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="checkout" alt=""/>
+      <caption webpage="cart" alt=""/>
+      <caption webpage="shop" alt=""/>
+    </file>
+    <file name="telegram_poster_.png" crc="407504546" ref="index"/>
+    <file name="logo-bk.svg" crc="4074405874" seo="true" ref="index:shop:product:my-account:cart:checkout:terms-and-conditions:тематики:csgo">
+      <caption webpage="product" alt=""/>
+      <caption webpage="my-account" alt=""/>
+      <caption webpage="terms-and-conditions" alt=""/>
+      <caption webpage="csgo" alt=""/>
+      <caption webpage="тематики" alt=""/>
+      <caption webpage="index" alt=""/>
+      <caption webpage="checkout" alt=""/>
+      <caption webpage="cart" alt=""/>
+      <caption webpage="shop" alt=""/>
+    </file>
+    <file name="logo-bk_poster_.png" crc="91230421" ref="index"/>
+    <file name="2015436.jpg" crc="21909765" ref="csgo">
+      <caption webpage="csgo" alt=""/>
+    </file>
+    <file name="1351115903_csgo_logo_k (1).png" crc="266490465" seo="true" ref="csgo">
+      <caption webpage="csgo" alt=""/>
+    </file>
+    <file name="cs-go-de_dust2.jpg" crc="127794544" ref="csgo">
+      <caption webpage="csgo" alt=""/>
+    </file>
+    <file name="безимени-1-crop-u8984.png" crc="434950252" seo="true" ref="csgo">
+      <caption webpage="csgo" alt=""/>
+    </file>
+    <file name="вставленные-svg-77573x67.svg" crc="3918857955" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="вставленные svg 77573x67_poster_.png" crc="3885499158" ref="index"/>
+    <file name="вставленные-svg-7813x7.svg" crc="228211804" seo="true" ref="index">
+      <caption webpage="index" alt=""/>
+    </file>
+    <file name="вставленные svg 7813x7_poster_.png" crc="37912505" ref="index"/>
+  </folder>
+  <file name="index.html" crc="3873767535" seo="true" mt="1513702190065" redirect="true"/>
+  <file name="shop.html" crc="127080076" seo="true" mt="1513702208033" redirect="true"/>
+  <file name="product.html" crc="3937925628" seo="true" mt="1513622414029" redirect="true"/>
+  <file name="my-account.html" crc="426181861" seo="true" mt="1513622414029" redirect="true"/>
+  <file name="cart.html" crc="4082867778" seo="true" mt="1513622414029" redirect="true"/>
+  <file name="checkout.html" crc="4143135719" seo="true" mt="1513622414029" redirect="true"/>
+  <file name="terms-and-conditions.html" crc="35459888" seo="true" mt="1513622414081" redirect="true"/>
+  <file name="error.html" crc="1289331" seo="true" mt="1513622414040" redirect="true"/>
+  <file name="тематики.html" crc="190084531" seo="true" mt="1513622414029" redirect="true"/>
+  <file name="csgo.html" crc="4124769207" seo="true" mt="1513700107334" redirect="true"/>
+</manifest>
