@@ -1,6 +1,7 @@
 *{
   margin: 0px;
   padding: 0px;
+  color: white;
 }
 
 body{
@@ -13,6 +14,8 @@ body{
 
 header{
   outline: var(--border);
+  display: flex;
+  flex-direction: row;
 }
 
 .main-container{
@@ -27,4 +30,6 @@ header{
   background-position: center;
   background-size: 458px;
   height: 80px;
+  display: flex;
+  align-self: center;
 }
