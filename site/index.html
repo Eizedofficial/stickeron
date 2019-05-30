@@ -7,15 +7,109 @@
     <title>Stickeron</title>
   </head>
   <body>
+    <div class="main-lines">
+      <div id="vertical">
+      </div>
+    </div>
+    <div class="hr-lines">
+      <div class="horizontal" id="h1">
+      </div>
+      <div class="horizontal" id="h2">
+      </div>
+      <div class="horizontal" id="h3">
+      </div>
+      <div class="horizontal" id="h4">
+      </div>
+      <div class="horizontal" id="h5">
+      </div>
+      <div class="horizontal" id="h6">
+      </div>
+    </div>
     <header>
         <div id="logo" class="logo"></div>
-        <span>ВХОД<img src="Sources/login-arrow.svg"></span>
+        <a href=""><span>ВХОД<img src="Sources/login-arrow.svg"></span></a>
     </header>
     <section id="collections">
-      <div class="collection"></div>
-      <div class="collection"></div>
-      <div class="collection"></div>
+      <div data-proportion-h="1.5625" class="collection col1"></div>
+      <div data-proportion-h="1.5625" class="collection col2"></div>
+      <div data-proportion-h="1.5625" class="collection col3"></div>
     </section>
+    <section id="stickers-amount">
+      <div>
+        30 великолепных стикеров <br>
+        в&nbsp;индивидуальной&nbsp;упаковке
+      </div>
+    </section>
+    <section id="delivery">
+      <div class="main-container">
+        <img src="Sources/Index/delivery-plane.png">
+        <div id="freeship">
+          Бесплатная<br>доставка<br>
+          <span>по России</span>
+        </div>
+      </div>
+    </section>
+    <section id="individuality" class="sect">
+      <div class="main-container ind">
+        <span>Демонстрируй<br>индивидуальность</span>
+      </div>
+    </section>
+    <nav>
+      <div class="main-container">
+        <a href="">Возврат и обмен</a>
+        <a href="">Доставка</a>
+        <a href="">Находится</a>
+        <a href="">Мобильная версия</a>
+      </div>
+    </nav>
+    <section id="share-views" class="sect">
+      <div class="main-container ind">
+        <span>Делись своими<br>взглядами</span>
+      </div>
+    </section>
+    <section id="control-the-world" class="sect">
+      <div class="main-container ind">
+        <span>Управляй миром<br>муха-ха-ха</span>
+      </div>
+    </section>
+    <a href="#top"><div class="coll-href">
+      Коллекции
+    </div></a>
+    <section id="ukraine">
+      <div class="main-container">
+        <img src="Sources/Index/ukr-logo.png">
+        <div id="ukr-text">
+          Украина объявила<br>
+          Стикерон антиполитической,<br>
+          запрещенной организацией.<br><br>
+          <span>Теперь доставка в Украину - бесплатно</span>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <a href="https://telegram.com" class="social-network"><img src="Sources/Index/telegram.svg"></a>
+      <a href="https://instagram.com" class="social-network"><img src="Sources/Index/instagram.svg"></a>
+      <a href="https://vk.com" class="social-network"><img src="Sources/Index/vk.svg"></a>
+      <a href="https://facebook.com" class="social-network"><img src="Sources/Index/facebook.svg"></a>
+    </footer>
+    <script src="stickjaw.js"></script>
+    <script src="jquery-3.3.1.min.js"></script>
     <script src="main.js"></script>
+    <script>
+      var SJ_setiings = {
+                  options: {
+                      hlw: true, // Height as width
+                      wlh: true, // Width as height
+                      hlt: true, // Width of the target element (target id is the same as for height)
+                      wlt: true, // Height of the target element (target id is the same as for width)
+                      alo: true, // All elements as one (height)
+                  },
+                  settings: {
+                      windowResize: true,
+                      writeHystory: true
+                  }
+              }
+      var sj = new SJ(SJ_setiings);
+    </script>
   </body>
 </html>
