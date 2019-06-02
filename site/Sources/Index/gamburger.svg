@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26" height="22" viewBox="0 0 26 22">
+  <defs>
+    <pattern id="pattern" preserveAspectRatio="none" width="100%" height="100%" viewBox="0 0 120 100">
+      <image width="120" height="100" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAABkCAYAAABNcPQyAAAACXBIWXMAABcRAAAXEQHKJvM/AAABI0lEQVR4nO3cwQkCQRBFwa8YiKGZiWumZrJeTEGERxX0feAxw5z6cp7n6LpuO7adJjnHdaQJHCdw3MUnq80NjhM4TuA4geMEjhM4TuA4geMEjhM4TuA4geMEjhM4TuA4geMEjhM4TuA4geMEjhM4TuA4geMEjhM4TuA4geMEjhM4TuA4geMEjhM4TuA4geMEjhM4TuA4geMEjrttu3+Hnvdt22Pb888H4Tdenug4geMEjrNOOM4NjhM4TuA4geMEjhM4TuA4geMEjhM4TuA4geMEjhM4TuA4geMEjhM4TuA4geMEjhM4TuA4geMEjhM4TuA4geMEjhM4TuA4geMEjhM4TuA4geMEjhM4TuA4geMEjhM4zr7oNvui4+yLrhM4TuC4Dx0ghU8aTTuzAAAAAElFTkSuQmCC"/>
+    </pattern>
+  </defs>
+  <rect id="gamburger" width="26" height="22" fill="url(#pattern)"/>
+</svg>

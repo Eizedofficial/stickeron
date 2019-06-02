@@ -27,8 +27,15 @@ a{
   text-decoration: none;
 }
 
+html{
+  min-height: 100%;
+  position: relative;
+}
+
 body{
   background-color: #070811;
+  min-width: 320px;
+  height: 100%;
 }
 
 header{
@@ -37,6 +44,9 @@ header{
   padding: 0 50px;
   outline: var(--border);
 }
+  header button{
+    display: none;
+  }
   header span{
     margin: 0 auto;
     position: absolute;
@@ -87,7 +97,7 @@ nav{
   #vertical{
     max-width: 1440px;
     margin: 0 auto;
-    height: 4506px;
+    height: 100%;
     outline: var(--border);
   }
 
@@ -165,6 +175,7 @@ nav{
   outline: none;
   display: flex;
   align-items: center;
+  position: relative;
 }
   #stickers-amount div{
     width: 1368px;
@@ -313,9 +324,6 @@ footer{
     line-height: 60px;
     margin-left: 35px;
   }
-  #freeship span{
-    font-size: 25px;
-  }
   .sect span{
     font-size: 90px;
   }
@@ -328,5 +336,252 @@ footer{
   }
   #ukr-text span{
     font-size: 25px;
+  }
+}
+
+@media (max-width: 1024px){
+  .hr-lines{
+    display: none;
+  }
+  :root{
+    --border: 0.5px solid white;
+  }
+  header{
+    height: 60px;
+    padding: 0;
+    align-items: center;
+    outline: none;
+  }
+    header a{
+      display: none;
+    }
+    header button{
+      display: inline-block;
+      width: 26px;
+      height: 22px;
+      background-image: url('Sources/Index/Gamburger.svg');
+      background-color: unset;
+      border: none;
+      position: absolute;
+      top: 16px;
+      right: 12px;
+    }
+  .logo{
+    width: 50%;
+    flex-basis: unset;
+    background-size: auto;
+  }
+  #stickers-amount{
+    padding: 16px 50px;
+  }
+    #stickers-amount div{
+      font-size: 72px;
+    }
+
+  #delivery{
+    padding-top: 35px;
+  }
+  #delivery .main-container{
+    flex-direction: column;
+    width: 100%;
+  }
+    #delivery img{
+      max-height: unset;
+      display: block;
+      width: 100%;
+      margin-bottom: 27px;
+    }
+  #freeship{
+    flex-basis: unset;
+    align-self: flex-start;
+    margin-left: 0;
+  }
+  .sect span{
+    font-size: 52px;
+    line-height: 60px;
+    position: relative;
+  }
+  .ind{
+    padding-left: 50px;
+  }
+  #share-views{
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+  }
+    #share-views span{
+      margin-bottom: 40px;
+      display: inline-block;
+    }
+  #individuality span{
+    margin-top: 16px;
+    display: inline-block;
+  }
+  .main-container{
+    width: unset;
+    margin: 0;
+  }
+  nav{
+    display: flex;
+    justify-content: center;
+  }
+  nav a{
+    font-size: 15px;
+  }
+  #control-the-world{
+    margin-top: 50px;
+    height: 290px;
+    display: flex;
+    justify-content: center;
+  }
+    #control-the-world .ind{
+      padding-left: 0;
+      display: inline;
+    }
+  .social-network{
+    height: 150px;
+  }
+    footer img {
+      width: 80px;
+      height: 80px;
+    }
+}
+
+@media (max-width: 1000px){
+  #ukraine{
+    height: 400px;
+    padding: 0;
+  }
+  #ukraine .main-container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  #ukr-text{
+    font-size: 30px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 615px){
+  nav{
+    display: none;
+  }
+  #collections{
+    flex-direction: column;
+    padding: 0;
+    align-items: center;
+    margin-bottom: 0;
+  }
+    .collection{
+      width: 100%;
+      max-width: 515px;
+      outline: none;
+      background-size: 105%;
+    }
+      .collection:hover{
+        background-size: 105%;
+      }
+        .col1{
+          background-image: url("Sources/Index/collection-1_mobile.png");
+        }
+        .col2{
+          background-image: url("Sources/Index/collection-2_mobile.png");
+        }
+        .col3{
+          background-image: url("Sources/Index/collection-3_mobile.png");
+        }
+  #stickers-amount{
+    padding: 36px 50px;
+    height: unset;
+  }
+    #stickers-amount div{
+      font-size: 35px;
+      line-height: 30px;
+    }
+  #delivery{
+    height: unset;
+    padding: 34px 50px;
+    margin-bottom: 0;
+  }
+    #freeship{
+      flex-basis: unset;
+      margin-left: 0;
+      align-self: flex-start;
+      font-size: 35px;
+      line-height: 30px;
+    }
+      #freeship span{
+        font-size: 25px;
+      }
+
+  .sect{
+    background-size: 250%;
+  }
+    .ind{
+      padding-left: 50px;
+    }
+  #individuality{
+    padding-top: 16px;
+  }
+  #share-views{
+    display: flex;
+    padding: 0;
+    align-items: flex-end;
+  }
+    #share-views span{
+      margin-top: 0;
+    }
+
+  .sect span{
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: 16px;
+    position: relative;
+  }
+  #control-the-world{
+    height: 217px;
+    margin-top: 20px;
+    background-size: 160%;
+  }
+    #control-the-world .ind{
+      margin-top: 30px;
+    }
+  .coll-href{
+    font-size: 14px;
+    height: 43px;
+  }
+  #ukraine{
+    height: 370px;
+    padding-left: 34px;
+    position: relative;
+  }
+  #ukraine .main-container{
+    justify-content: unset;
+  }
+  #ukraine img{
+    align-self: flex-start;
+    margin-top: 90px;
+    width: 56.5%;
+  }
+  #ukr-text{
+    margin-left: 0;
+    font-size: 20px;
+    line-height: 25px;
+    align-self: flex-start;
+    margin-top: 35px;
+  }
+  #ukr-text span{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 18px;
+  }
+  .social-network{
+    height: 70px;
+    width: 175px;
+  }
+  .social-network img{
+    height: 40px;
   }
 }
