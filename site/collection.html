@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="collection.css">
+    <title>KANDINSKY</title>
+  </head>
+  <body>
+    <div id="buy-button">
+      189руб - Купить
+      <div id="blur"></div>
+    </div>
+    <header>
+        <a id="exit-button" href=""><span><img src="Sources/Collections/exit-arrow.svg">ВЫХОД</span></a>
+        <div id="logo" class="logo"></div>
+        <a href=""><span>ВХОД<img src="Sources/Collections/login-arrow.svg"></span></a>
+        <button type="button"></button>
+    </header>
+    <div id="collection-cover">
+      <div>KANDINSKY</div>
+    </div>
+    <div id="prices">
+      <span id="amount">12 стикеров</span>
+      <span id="price">189руб</span>
+    </div>
+    <script src="stickjaw.js"></script>
+    <script>
+      var SJ_setiings = {
+                  options: {
+                      hlw: true, // Height as width
+                      wlh: true, // Width as height
+                      hlt: true, // Width of the target element (target id is the same as for height)
+                      wlt: true, // Height of the target element (target id is the same as for width)
+                      alo: true, // All elements as one (height)
+                  },
+                  settings: {
+                      windowResize: true,
+                      writeHystory: true
+                  }
+              }
+      var sj = new SJ(SJ_setiings);
+    </script>
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="collection.js" type="text/javascript"></script>
+  </body>
+</html>

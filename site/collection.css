@@ -1,0 +1,69 @@
+/* |HEADER| */
+
+header{
+  justify-content: space-between;
+}
+
+header span{
+  color: #EC3933;
+  right: unset;
+  position: relative;
+}
+
+#logo{
+  align-self: center;
+}
+
+#exit-button{
+  right: unset;
+  position: relative;
+}
+  #exit-button img{
+    margin: 0 20px 0 0;
+  }
+
+/* |TO CART| */
+
+#buy-button{
+  width: 100%;
+  height: 84px;
+  position: fixed;
+  bottom: 0;
+  background-color: rgba(236,57,51,0.52);
+}
+
+/* |COVER| */
+
+#collection-cover{
+  width: 100%;
+  height: 808px;
+  background-image: url("Sources/Collections/cover.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: flex-end;
+  display: flex;
+  overflow: hidden;
+}
+  #collection-cover div{
+    font-family: CG;
+    font-size: 18vw;
+    color: white;
+    margin-bottom: -5%;
+  }
+
+/* |PRICES| */
+
+#prices{
+  font-family: Lack;
+  font-size: 45px;
+  display: flex;
+  justify-content: space-between;
+  width: calc(100% - 460px);
+  padding: 0 230px;
+  height: 108px;
+  align-items: center;
+}
+  #price{
+    color: #EC3933;
+  }
