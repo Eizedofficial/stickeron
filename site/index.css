@@ -80,6 +80,7 @@ nav{
 }
   nav .main-container{
     justify-content: flex-start;
+    padding-left: 20px;
   }
   nav a{
     font-family: Casper;
@@ -135,7 +136,7 @@ aside{
   }
   #h2{
     margin-top: 892px;
-    height: 141px;
+    height: 90px;
   }
 
 .main-container{
@@ -163,7 +164,6 @@ aside{
   .collection{
     width: 480px;
     height: 750px;
-    outline: var(--border);
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;

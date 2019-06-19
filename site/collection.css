@@ -10,6 +10,10 @@ header span{
   position: relative;
 }
 
+section{
+  padding: 0 11%;
+}
+
 #logo{
   align-self: center;
 }
@@ -23,14 +27,14 @@ header span{
   }
 
 /* |TO CART| */
-
-#buy-button{
+/* FIXME */
+/* #buy-button{
   width: 100%;
   height: 84px;
   position: fixed;
   bottom: 0;
   background-color: rgba(236,57,51,0.52);
-}
+} */
 
 /* |COVER| */
 
@@ -67,3 +71,223 @@ header span{
   #price{
     color: #EC3933;
   }
+
+/* |BIO| */
+
+#bio{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  align-items: center;
+}
+  #bio div{
+    display: inline-block;
+    font-family: Lack;
+    font-size: 2.3vw;
+    height: 384px;
+    line-height: 60px;
+    align-self: flex-start;
+    margin-top: 44px;
+  }
+  #bio img{
+    margin-right: 78px;
+    width: 29%;
+  }
+  @media(max-width: 1650px){
+    #bio div{
+      line-height: unset;
+      height:  unset;
+    }
+  }
+
+/* |CONTENT| */
+
+button{
+  position: absolute;
+  border: none;
+  background-color: transparent;
+  width: 1.667vw;
+  height: 1.667vw;
+  background-repeat: no-repeat;
+  background-size: contain;
+  right: 6.3%;
+  top: 50%;
+  outline: none;
+}
+  .order{
+    background-image: url('Sources/Collections/order.png');
+  }
+  .grid{
+    background-image: url('Sources/Collections/grid.png');
+    right: 3.1%;
+  }
+  .unactive{
+    filter: brightness(50%);
+  }
+
+#inside{
+  font-family: Lack;
+  font-size: 5.2vw;
+  text-align: center;
+  height: 5.885vw;
+  margin: 50px 0;
+}
+  #inside div{
+    position: relative;
+  }
+
+#order{
+  padding: 20px 22%;
+}
+.item_order{
+  display: flex;
+  align-items: center;
+  font-family: Lack;
+  position: relative;
+  margin-bottom: 11px;
+  padding: 20px 0;
+}
+  .item-img{
+    height: 100%;
+    margin-right: 4.7%;
+  }
+  .item-info_order{
+    display: inline-block;
+    align-self: stretch;
+  }
+  .item-name_order{
+    font-size: 2.3vw;
+  }
+  .item-year_order{
+    font-size: 1.719vw;
+    color: #3441CC;
+    margin-bottom: 2.1%;
+  }
+  .item-description_order{
+    font-family: Casper;
+    font-size: 1.042vw;
+    line-height: 1.302vw;
+    margin-top: 5.5%;
+  }
+  .item-tech_order{
+    display: flex;
+    align-items: center;
+    margin-top: 7%;
+    font-size: 1.042vw;
+  }
+  .size-img{
+    width: 5.2% !important;
+    margin-right: 15px;
+  }
+    .size-text{
+      margin-right: 15px;
+    }
+  .material-img{
+    width: 4% !important;
+    margin-right: 15px;
+  }
+
+/* |GRID| */
+
+#grid{
+    flex-wrap: wrap;
+    width: 60.052vw;
+    justify-content: space-between;
+    margin: 0 auto;
+    display: none;
+}
+  #grid img{
+    width: 17.760vw;
+    height: 17.760vw;
+    margin-bottom: 2.344vw;
+  }
+
+
+/* |PHRASE| */
+
+#phrase{
+  font-family: CG;
+  padding: 1.823vw 20%;
+  font-size: 6vw;
+  font-weight: bold;
+  line-height: 5.208vw;
+  margin-bottom: 70px;
+}
+
+/* | НАЧИНАЕТСЯ ЁБЛЯ | */
+
+@media(max-width: 1024px){
+  header{
+    margin-top: 0;
+    justify-content: center;
+    height: 6.836vw;
+  }
+  header button{
+    height: 2.148vw;
+    width: 2.539vw;
+  }
+
+  #collection-cover{
+    height: 456px;
+  }
+
+  #prices{
+    font-size: 4vw;
+    white-space: nowrap;
+    padding: 0 18%;
+    width: 64%;
+    padding-top: 10px;
+    height: 60px;
+  }
+
+  #bio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+    #bio img{
+      width: 64%;
+      height: auto;
+      margin-right: 0;
+    }
+    #bio div{
+      margin-top: 18px;
+      width: 64%;
+      margin: 18px auto 0;
+    }
+
+    #inside{
+      height: 80px;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+      #inside button{
+        position: relative;
+        width: 24px;
+        height: 24px;
+        right: unset;
+      }
+      #toOrder{
+        margin-right: 20px;
+      }
+      #insideContent{
+        align-items: center;
+      }
+  #order{
+    padding: 0;
+    align-items: center;
+    margin-top: 3.922vw;
+  }
+  .item_order{
+    flex-direction: column;
+    width: 371px;
+    height: 656px !important;
+    margin: 0 auto;
+  }
+    .item-img{
+      width: 371px;
+      height: 371px;
+    }
+}
