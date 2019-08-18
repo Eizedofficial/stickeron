@@ -2,6 +2,7 @@
 
 header{
   justify-content: space-between;
+  outline: none;
 }
 
 header span{
@@ -12,6 +13,10 @@ header span{
 
 section{
   padding: 0 11%;
+}
+
+body{
+  background-color: #000000;
 }
 
 #logo{
@@ -48,6 +53,7 @@ section{
   align-items: flex-end;
   display: flex;
   overflow: hidden;
+  outline: 0.8px solid white;
 }
   #collection-cover div{
     font-family: CG;
@@ -67,6 +73,7 @@ section{
   padding: 0 230px;
   height: 108px;
   align-items: center;
+  outline: 0.8px solid white;
 }
   #price{
     color: #EC3933;
@@ -138,6 +145,7 @@ button{
 
 #order{
   padding: 20px 22%;
+  outline: 0.9px solid white;
 }
 .item_order{
   display: flex;
@@ -214,6 +222,12 @@ button{
   margin-bottom: 70px;
 }
 
+@media (max-width: 1240px) {
+  #order{
+    padding: 0 11%;
+  }
+}
+
 /* | НАЧИНАЕТСЯ ЁБЛЯ | */
 
 @media(max-width: 1024px){
@@ -221,6 +235,7 @@ button{
     margin-top: 0;
     justify-content: center;
     height: 6.836vw;
+    background-color: #000000;
   }
   header button{
     height: 2.148vw;
@@ -236,7 +251,7 @@ button{
     white-space: nowrap;
     padding: 0 18%;
     width: 64%;
-    padding-top: 10px;
+    padding-top: 0.977vw;
     height: 60px;
   }
 
@@ -245,16 +260,18 @@ button{
     flex-direction: column;
     align-items: center;
     margin-bottom: 30px;
+    margin-top: 3.516vw;
   }
     #bio img{
-      width: 64%;
+      width: 275px;
       height: auto;
       margin-right: 0;
     }
     #bio div{
       margin-top: 18px;
-      width: 64%;
-      margin: 18px auto 0;
+      margin: 3vw auto 0;
+      font-size: unset;
+      max-width: 530px;
     }
 
     #inside{
@@ -285,9 +302,59 @@ button{
     width: 371px;
     height: 656px !important;
     margin: 0 auto;
+    margin-bottom: 10px;
   }
     .item-img{
       width: 371px;
       height: 371px;
+      margin-right: 0;
     }
+    .item-name_order{
+      font-size: 25px;
+      text-align: center;
+      height: 38px;
+      margin-top: 11px;
+    }
+    .item-year_order{
+      font-size: 20px;
+      text-align: center;
+      height: 23px;
+    }
+    .item-description_order{
+      font-size: 15px;
+      height: unset;
+      line-height: 20px;
+      width: 274px;
+      padding-left: 48px;
+    }
+    .item-tech_order{
+      font-size: 15px;
+      display: flex;
+      justify-content: space-evenly;
+      width: 250px;
+      margin: 20px auto 0;
+    }
+      .item-tech_order img{
+        width: unset !important;
+      }
+    #phrase{
+      display: none;
+    }
+    footer{
+      margin-top: 70px;
+    }
+
 }
+
+#stripes{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+  .s_main{
+    margin: 0 11%;
+    height: 100%;
+    outline: 0.8px solid white;
+  }

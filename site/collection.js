@@ -55,4 +55,5 @@ $(window).on('load', function(){
       //$('header').css('transition-duration', '0').delay(300);
     });
   });
+  console.log($('#phrase').css('padding-top'));
 });
