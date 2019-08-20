@@ -4,7 +4,8 @@ $(window).on('load', function(){
   $('#toOrder').on('click', function(){
     $('#order').css({
       'opacity' : '1',
-      'position' : 'relative'
+      'position' : 'relative',
+      'margin-top' : '0'
     });
     $('#grid').hide();
     $('.s_item').show();
@@ -16,7 +17,8 @@ $(window).on('load', function(){
   $('#toGrid').on('click', function(){
     $('#order').css({
       'position' : 'absolute',
-      'opacity' : '0'
+      'opacity' : '0',
+      'margin-top' : '-10000px'
     });
     $('#grid').css('display', 'flex');
 
