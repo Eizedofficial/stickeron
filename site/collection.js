@@ -1,6 +1,29 @@
 $(window).on('load', function(){
   var currentcolor = 1;
   var timer = setInterval(function(){document.getElementById('logo').style.backgroundImage="url('Sources/logo-"+(((++currentcolor)%3)+1)+"_white.svg')"},1000);
+  $('#toOrder').on('click', function(){
+    $('#order').css({
+      'opacity' : '1',
+      'position' : 'relative'
+    });
+    $('#grid').hide();
+    $('.s_item').show();
+
+    $('#toOrder').removeClass('unactive');
+    $('#toGrid').addClass('unactive');
+
+  });
+  $('#toGrid').on('click', function(){
+    $('#order').css({
+      'position' : 'absolute',
+      'opacity' : '0'
+    });
+    $('#grid').css('display', 'flex');
+
+    $('#toOrder').addClass('unactive');
+    $('#toGrid').removeClass('unactive');
+    $('.s_item').hide();
+  });
 
   $(window).resize(function(){if($(window).width()+16>1024){
     $('aside').hide();
