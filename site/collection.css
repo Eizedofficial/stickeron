@@ -27,6 +27,19 @@ a{
   position: relative;
   z-index: 100;
 }
+#grid{
+  width: 60.052vw;
+  margin: 0 auto;
+  border-spacing: 0;
+  align: ;
+}
+table img{
+  width: 17.760vw;
+  height: 17.760vw;
+}
+  tr{
+    width: 100%;
+  }
 
 #logo{
   align-self: center;
@@ -207,17 +220,14 @@ button{
 /* |GRID| */
 
 #grid{
-    flex-wrap: wrap;
     max-width: 78%;
-    justify-content: space-around;
     margin: 0 auto;
-    display: none;
 }
-  #grid img{
+  /*#grid img{
     width: 17.760vw;
     height: 17.760vw;
     margin-bottom: 45px;
-  }
+  }*/
 
 
 /* |PHRASE| */
