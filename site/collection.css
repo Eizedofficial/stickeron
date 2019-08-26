@@ -3,12 +3,17 @@
 header{
   justify-content: space-between;
   outline: none;
+  z-index: 9999;
 }
 
 header span{
   color: #EC3933;
   right: unset;
   position: relative;
+}
+
+header button{
+  top: calc(50% - 1.074vw);
 }
 
 section{
@@ -28,8 +33,18 @@ a{
   z-index: 100;
 }
 
+aside img{
+  position: absolute;
+  margin-top: 100px;
+}
+
+#backToTheFuture{
+  top: -3.6vw;
+}
+
 #logo{
   align-self: center;
+  z-index: 10001;
 }
 
 #exit-button{
@@ -41,14 +56,14 @@ a{
   }
 
 /* |TO CART| */
-/* FIXME */
-/* #buy-button{
+
+#buy-button{
   width: 100%;
   height: 84px;
   position: fixed;
   bottom: 0;
-  background-color: rgba(236,57,51,0.52);
-} */
+  z-index: 99999999;
+}
 
 /* |COVER| */
 
@@ -122,12 +137,12 @@ button{
   position: absolute;
   border: none;
   background-color: transparent;
-  width: 1.667vw;
-  height: 1.667vw;
+  width: 31.5px;
+  height: 31.5px;
   background-repeat: no-repeat;
   background-size: contain;
-  right: 6.3%;
-  top: 50%;
+  right: 92px;
+  top: calc(50% - 8px);
   outline: none;
 }
   .order{
@@ -135,7 +150,7 @@ button{
   }
   .grid{
     background-image: url('Sources/Collections/grid.png');
-    right: 3.1%;
+    right: 45px;
   }
   .unactive{
     filter: brightness(50%);
@@ -143,13 +158,66 @@ button{
 
 #inside{
   font-family: Lack;
-  font-size: 5.2vw;
+  font-size: 101px;
   text-align: center;
   height: 5.885vw;
   margin: 50px 0;
 }
   #inside div{
     position: relative;
+  }
+  @media(max-width: 1500px){
+    #inside{
+      font-size: 80px;
+    }
+  }
+  @media(max-width: 1265px){
+    #inside{
+      font-size: 70px;
+    }
+  }
+  @media(max-width: 1150px){
+    #inside{
+      font-size: 60px;
+    }
+  }
+  @media(max-width: 1024px){
+    #inside{
+      font-size: 40px;
+      height: unset;
+    }
+    #inside button{
+      top: 0;
+    }
+    #order{
+      margin-top: 0;
+    }
+  }
+  @media(max-width: 770px){
+    #inside{
+      font-size: 30px;
+    }
+    #insideContent{
+      padding-top: 32px;
+    }
+      #insideContent button{
+        float: left;
+        display: block;
+        position: absolute !important;
+        top: 0 !important;
+      }
+        #toOrder{
+          left: calc(50% - 39px);
+        }
+        #toGrid{
+          left: calc(50% + 15px);
+        }
+  }
+  @media(max-width: 440px){
+    #insideContent{
+      font-size: 20px;
+      padding-top: 37px;
+    }
   }
 
 #order{
@@ -207,16 +275,19 @@ button{
 /* |GRID| */
 
 #grid{
-    flex-wrap: wrap;
-    max-width: 78%;
-    justify-content: space-around;
+    max-width: 1220px;
     margin: 0 auto;
     display: none;
+    padding: 0;
+    text-align: center;
 }
+  #grid div{
+  }
   #grid img{
-    width: 17.760vw;
-    height: 17.760vw;
+    width: 341px;
+    height: 341px;
     margin-bottom: 45px;
+    display: inline;
   }
 
 
@@ -245,10 +316,14 @@ button{
     justify-content: center;
     height: 6.836vw;
     background-color: #000000;
+    position: relative; 
   }
   header button{
     height: 2.148vw;
     width: 2.539vw;
+  }
+  #logo{
+    display: block;
   }
 
   #collection-cover{
@@ -290,13 +365,14 @@ button{
       margin: 0;
     }
       #inside button{
-        position: relative;
+        right: 30px;
+        position: absolute;
         width: 24px;
         height: 24px;
-        right: unset;
+        top: calc(50% - 9px);
       }
       #toOrder{
-        margin-right: 20px;
+        margin-right: 44px;
       }
       #insideContent{
         align-items: center;
@@ -387,5 +463,11 @@ button{
 @media (max-width: 615px) {
   footer{
     margin-top: 0;
+  }
+}
+@media(max-width: 704px){
+  #grid img{
+    width: 165px;
+    height: 165px;
   }
 }
