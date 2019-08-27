@@ -33,13 +33,19 @@ a{
   z-index: 100;
 }
 
-aside img{
-  position: absolute;
-  margin-top: 100px;
+aside{
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  z-index: 99999;
 }
+  aside img{
+    position: absolute;
+    margin-top: 100px;
+  }
 
 #backToTheFuture{
-  top: -3.6vw;
+  top: -8.6vw;
 }
 
 #logo{
@@ -57,12 +63,23 @@ aside img{
 
 /* |TO CART| */
 
-#buy-button{
+#buyButton{
   width: 100%;
-  height: 84px;
-  position: fixed;
-  bottom: 0;
-  z-index: 99999999;
+  height: 4.375vw;
+  min-height: 58px;
+  position: absolute;
+  z-index: 99999;
+  background-color: rgba(236,57,51,0.5);
+  font-family: Lack;
+  font-size: 1.719vw;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  backdrop-filter: blur(27px);
 }
 
 /* |COVER| */
@@ -316,11 +333,15 @@ button{
     justify-content: center;
     height: 6.836vw;
     background-color: #000000;
-    position: relative; 
+    position: absolute;
+    top: 0;
   }
   header button{
     height: 2.148vw;
     width: 2.539vw;
+  }
+  #buyButton{
+    font-size: 20px;
   }
   #logo{
     display: block;

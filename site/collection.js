@@ -1,4 +1,16 @@
 $(window).on('load', function(){
+  function fixHeader(onlyButton){
+    if(!onlyButton){
+      $('header').css('top', $(window).scrollTop()+'px');
+    }
+      var buttonOffset = $(window).scrollTop()+$(window).height()-$('#buyButton').height();
+      if(buttonOffset<$('footer').offset().top-$('#buyButton').height()){
+        $('#buyButton').css('top', buttonOffset+'px');
+      }else{
+        $('#buyButton').css('top', $('footer').offset().top-$('#buyButton').height()+'px');
+      }
+  };
+  fixHeader();
   var currentcolor = 1;
   var timer = setInterval(function(){document.getElementById('logo').style.backgroundImage="url('Sources/logo-"+(((++currentcolor)%3)+1)+"_white.svg')"},1000);
   $('#toOrder').on('click', function(){
@@ -37,7 +49,7 @@ $(window).on('load', function(){
     $('aside').hide();
     $('body').css({'transform': 'translateX(0)', 'overflow' : 'unset', 'overflow-x' : 'hidden'});
     $('header').css({'transform': 'translateX(0)', 'transition-duration' : '0'});
-  }})
+  }else{$('aside').show()};fixHeader()})
 
   $('header button').on('click', function(){
     isMenuOpened = true;
@@ -47,19 +59,22 @@ $(window).on('load', function(){
     });
     $('header').css({
       "transform" : "translateX(25%)",
-      "transition-duration" : "0.3s"
+      "transition" : "transform 0.4s"
     });
     $('aside').css({
       "display" : "block",
       "transform" : "translateX(25%)",
-      "transition-duration" : "0.4s",
-      "transition-timing-function" : "ease-out"
+      "transition" : "transform 0.4s ease-out",
+      "height" : $(window).height()+'px',
+      "top" : $(window).scrollTop()+'px'
     });
     $('#backToTheFuture').on('click', function(){
       $('body').css({'transform': 'translateX(0)', 'overflow' : 'unset', 'overflow-x' : 'hidden'});
-      $('header').css('transform', 'translateX(0)');
+      $('header').css({'transform': 'translateX(0)', 'transition': 'transform 0s'});
       $('aside').css('transform' , 'translateX(125%)');
+      fixHeader();
     });
+
   });
   var itemsNum = $('#order').children().length;
   for (var i = 1; i < itemsNum+1; i++) {
@@ -73,4 +88,11 @@ $(window).on('load', function(){
       $('#s_item'+i).css({'top' : item.offset().top+'px'});
     }
   })
+  $(window).scroll(function(){
+    if ($(window).width()+16<1024) {
+      fixHeader(false);
+    }else{
+      fixHeader(true);
+    }
+  });
 });
