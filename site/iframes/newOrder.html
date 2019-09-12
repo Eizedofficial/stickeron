@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    @font-face {
+        font-family: Lack;
+        src: url("../Sources/fonts/lack-regular.otf");
+    }
+    @font-face {
+        font-family: CG;
+        src: url("../Sources/fonts/CG-bold.ttf");
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: Lack;
+      color: white;
+    }
+    body{
+      background-color: #EC3933;
+      overflow-x: hidden;
+    }
+    header{
+      justify-content: space-between;
+      outline: none;
+      height: 80px;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-between;
+      outline: 1px solid white;
+      wrap: nowrap;
+    }
+    .logo{
+      background-image: url("../Sources/logo-1_white.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 458px;
+      height: 80px;
+      flex-basis: 100%;
+    }
+    header span{
+      min-width: 243px;
+      align-items: center;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      font-size: 35px;
+      cursor: pointer;
+    }
+    header span span{
+      min-width: unset;
+    }
+    .exit img{
+      margin-right: 20px;
+    }
+    .login img{
+      transform: rotate(180deg);
+      margin-left: 20px;
+    }
+    .price{
+      height: 70px;
+      font-size: 33px;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      -ms-align-items: center;
+      align-items: center;
+    }
+    .item{
+      height: 427px;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      outline: 1px solid white;
+      justify-content: center;
+    }
+    .item span{
+      height: 100%;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      -ms-align-items: center;
+      align-items: center;
+      min-width: 243px;
+    }
+    .item span img{
+      cursor: pointer;
+    }
+    .item-content{
+      flex-grow: 1;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      align-content: center;
+      flex-direction: column;
+    }
+    .amount{
+      height: unset !important;
+      font-size: 45px;
+      margin-top: 15px;
+    }
+    .name{
+      height: unset !important;
+      font-size: 127px;
+      font-family: CG;
+    }
+    .item-content img{
+      -ms-align-self: center;
+      align-self: center;
+    }
+    #letter{
+      height: 456px;
+      position: fixed;
+      bottom: 0;
+      width: 684px;
+      left: calc(50% - 342px);
+    }
+    #letterIcon{
+      position: absolute;
+      display: inline-block;
+      left: calc(50% - 342px);
+    }
+    #username{
+      font-size: 33px;
+      position: absolute;
+      left: calc(50% - 90px);
+      top: 65px;
+      transition: color 0.15s ease-in;
+    }
+    #letter input{
+      width: 254px;
+      height: 30px;
+      background: none;
+      border: none;
+      position: absolute;
+      left: calc(50% - 127px);
+      border-bottom: 4px solid white;
+      top: 118px;
+      outline: none;
+      font-size: 40px;
+      padding-bottom: 10px;
+      text-align: center;
+      color: #3441CC;
+      transition: border-bottom 0.15s ease-in;
+    }
+    #arrow{
+      position: absolute;
+      left: calc(50% - 34px);
+      top: 234px;
+      cursor: pointer;
+    }
+    #Putin{
+      text-align: center;
+      position: absolute;
+      left: calc(50% - 82px);
+      top: 333px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="exit"><img src="../Sources/Index/icon-arrow-02.png"><span>ВЫХОД</span></span>
+    <a id="logo" href="../index.html" class="logo"></a>
+    <span class="login"><span>ВХОД</span><img src="../Sources/Index/icon-arrow-02.png"></span>
+  </header>
+  <div class="price">189 руб</div>
+  <div class="item" id="item">
+    <span class="one-more"><img src="../Sources/Collections/crossrow_blue.png"></span>
+    <div class="item-content">
+      <span class="amount">12 стикеров</span>
+      <span class="name">KANDINSKY</span>
+      <img src="../Sources/Collections/pack.png">
+    </div>
+    <span class="delete"><img src="../Sources/Collections/crossrow_red.png"></span>
+  </div>
+  <div id="letter">
+    <img id="letterIcon" src="../Sources/Collections/letter.png">
+    <span id="username">Ваше имя:</span>
+    <input id="inp" type="text">
+    <img id="arrow" src="../Sources/Collections/downarrow.png">
+    <span id="Putin">Положить в конверт<br>и подписать</span>
+  </div>
+  <script src="../jquery-3.3.1.min.js"></script>
+  <script>
+    $(window).on('load', function(){
+      var quanity = 1;
+      var currentcolor = 1;
+      var timer = setInterval(function(){document.getElementById('logo').style.backgroundImage="url('../Sources/logo-"+(((++currentcolor)%3)+1)+"_white.svg')"},1000);
+      $('.one-more img').on('click', function(){
+        $('#item').clone(true, true).attr('id', 'item'+quanity++).appendTo('body');
+        $('.price').text(189*quanity+" руб");
+      });
+      $('.delete img').on('click', function(){
+        if(quanity>1){
+          $('#item'+--quanity).detach();
+          $('.price').text(189*quanity+" руб");
+        };
+      });
+
+      //Exit
+
+      $('.exit').click(function(){
+        window.parent.document.getElementById('#newOrder').style.top='100%';
+      });
+
+      // Next step
+
+      $('#arrow').on('click', function(){
+        if ($('#inp').val().length==0) {
+          $('#username').css('color', '#EC3933');
+          setTimeout(function(){$('#username').css('color', 'white')},150);
+          $('#inp').css('border-bottom', '4px solid #EC3933');
+          setTimeout(function(){$('#inp').css('border-bottom', '4px solid white')},150);
+        }
+      });
+
+    });
+  </script>
+</body>
+</html>

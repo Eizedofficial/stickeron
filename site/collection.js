@@ -95,4 +95,9 @@ $(window).on('load', function(){
       fixHeader(true);
     }
   });
+  $('#buyButton').on('click', function(){
+    $('#newOrder').css('top','0');
+    $('body').css('overflow', 'hidden');
+    setTimeout(function(){$(window).scrollTop(0)},200);
+  });
 });
