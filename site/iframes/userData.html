@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    @font-face {
+        font-family: Lack;
+        src: url("../Sources/fonts/lack-regular.otf");
+    }
+    @font-face {
+        font-family: CG;
+        src: url("../Sources/fonts/CG-bold.ttf");
+    }
+    @font-face {
+        font-family: Casper;
+        src: url("../Sources/fonts/Casper.ttf");
+    }
+    *{
+      margin: 0;
+      padding: 0;
+      font-family: Lack;
+      color: white;
+    }
+    body{
+      background-color: #EC3933;
+      overflow-x: hidden;
+    }
+    header{
+      justify-content: space-between;
+      outline: none;
+      height: 80px;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: space-between;
+      outline: 1px solid white;
+      wrap: nowrap;
+    }
+    .logo{
+      background-image: url("../Sources/logo-1_white.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 380px;
+      height: 80px;
+      flex-basis: 100%;
+    }
+    header span{
+      min-width: 243px;
+      align-items: center;
+      display: -webkit-flex;
+      display: -ms-flex;
+      display: flex;
+      justify-content: center;
+      font-size: 35px;
+      cursor: pointer;
+    }
+    header span span{
+      min-width: unset;
+    }
+    .exit img{
+      margin-right: 20px;
+    }
+    .login img{
+      transform: rotate(180deg);
+      margin-left: 20px;
+    }
+    .total-price{
+      height: 139px;
+      font-size: 33px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .delivery-data{
+      background-image: url('../Sources/Collections/envelope.png');
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 289px;
+      width: 100%;
+      position: absolute;
+      top: calc(50% - 264px);
+      padding-top: 290px;
+
+    }
+      .delivery-data span{
+        font-family: Casper;
+        font-size: 20px;
+        color: black;
+        line-height: 20px;
+      }
+    .data{
+      padding-left: calc(50% - 379px);
+    }
+    input{
+      height: 43px;
+      font-size: 30px;
+      font-family: Casper;
+      color: #3441CC;
+      border: none;
+      padding-left: 10px;
+      margin-bottom: 9px;
+      margin-top: 5px;
+    }
+      .t1_1{
+        margin-left: 10px;
+      }
+      .t1_2{
+        margin-left: 185px;
+      }
+      .i1_1{
+        width: 201px;
+      }
+      .i1_2{
+        width: 247px;
+        margin-left: 13px;
+      }
+
+      .str2 input{
+        margin-bottom: 12px;
+      }
+      .t2_1{
+        margin-left: 10px;
+      }
+      .t2_2{
+        margin-left: 155px;
+      }
+      .t2_3{
+        margin-left: 175px;
+      }
+      .t2_4{
+        margin-left: 37px;
+        display: inline-block;
+      }
+      .i2_1{
+        width: 181px;
+      }
+      .i2_2{
+        width: 260px;
+        margin-left: 20px;
+      }
+      .i2_3{
+        width: 57px;
+        margin-left: 14px;
+      }
+      .i2_4{
+        width: 106px;
+        margin-left: 5px;
+      }
+
+      .t3_1{
+        margin-left: 10px;
+      }
+      .t3_2{
+        margin-left: 196px;
+      }
+      .i3_1{
+        width: 242px;
+      }
+      .i3_2{
+        width: 418px;
+        margin-left: 20px;
+      }
+
+      @media (max-width: 1080px) {
+        header span{
+          display: none;
+        }
+        .total-price{
+          font-size: 30px;
+        }
+      }
+
+      @media(max-width: 800px){
+      }
+
+      @media(max-width: 550px){
+        header{
+          height: 59px;
+        }
+        .logo{
+          height: 60px;
+          background-size: 245px;
+        }
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="exit"><img src="../Sources/Index/icon-arrow-02.png"><span>НАЗАД</span></span>
+    <a id="logo" href="../index.html" class="logo"></a>
+    <span class="login"><span>ВХОД</span><img src="../Sources/Index/icon-arrow-02.png"></span>
+  </header>
+  <div class="total-price">189руб.</div>
+  <div class="delivery-data">
+    <div class="data str1">
+      <span class="t1_1">Имя</span><span class="t1_2">Фамилия</span><br>
+      <input type="text" class="i1_1"><input type="text" class="i1_2">
+    </div>
+    <div class="data str2">
+      <span class="t2_1">Город</span>
+      <span class="t2_2">Улица/пр-кт</span>
+      <span class="t2_3">Дом</span>
+      <span class="t2_4">Квартира/<br>корпус</span><br>
+      <input type="text" class="i2_1">
+      <input type="text" class="i2_2">
+      <input type="text" class="i2_3">
+      <input type="text" class="i2_4">
+    </div>
+    <div class="data str3">
+      <span class="t3_1">Телефон</span>
+      <span class="t3_2">Электронная почта</span><br>
+      <input type="text" class="i3_1">
+      <input type="text" class="i3_2">
+    </div>
+  </div>
+  <script src="../jquery-3.3.1.min.js"></script>
+  <script>
+    $(window).on('load', function(){
+      var quanity = 1;
+      var currentcolor = 1;
+      var timer = setInterval(function(){document.getElementById('logo').style.backgroundImage="url('../Sources/logo-"+(((++currentcolor)%3)+1)+"_white.svg')"},1000);
+      $('.one-more img').on('click', function(){
+        $('#item').clone(true, true).attr('id', 'item'+quanity++).appendTo('body');
+        $('.price').text(189*quanity+" руб");
+      });
+      $('.delete img').on('click', function(){
+        if(quanity>1){
+          $('#item'+--quanity).detach();
+          $('.price').text(189*quanity+" руб");
+        };
+      });
+
+      // Next step
+
+      $('#arrow').on('click', function(){
+        if ($('#inp').val().length==0) {
+          $('#username').css('color', '#EC3933');
+          setTimeout(function(){$('#username').css('color', 'white')},150);
+          $('#inp').css('border-bottom', '4px solid #EC3933');
+          setTimeout(function(){$('#inp').css('border-bottom', '4px solid white')},150);
+        }
+      });
+
+    });
+  </script>
+</body>
+</html>

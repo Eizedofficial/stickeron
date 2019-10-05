@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -34,11 +34,18 @@
       outline: 1px solid white;
       wrap: nowrap;
     }
+    iframe{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 10;
+      display: none;
+    }
     .logo{
       background-image: url("../Sources/logo-1_white.svg");
       background-repeat: no-repeat;
       background-position: center;
-      background-size: 458px;
+      background-size: 380px;
       height: 80px;
       flex-basis: 100%;
     }
@@ -121,6 +128,7 @@
       bottom: 0;
       width: 684px;
       left: calc(50% - 342px);
+      z-index: 10;
     }
     #letterIcon{
       position: absolute;
@@ -162,9 +170,117 @@
       left: calc(50% - 82px);
       top: 333px;
     }
+
+    @media (max-width: 1080px) {
+      header span{
+        display: none;
+      }
+      .item{
+        height: 349px;
+      }
+      .item span img{
+        width: 30px;
+      }
+      .price{
+        font-size: 30px;
+      }
+      .amount{
+        font-size: 33px;
+      }
+      .name{
+        font-size: 83px;
+      }
+      .item-content img{
+        width: 150px;
+      }
+    }
+
+    @media(max-width: 800px){
+      header{
+        outline: none;
+      }
+      .item{
+        height: 300px;
+      }
+        .item span{
+          min-width: 52px;
+        }
+        .item span img{
+          width: 19px;
+        }
+      .price{
+        display: none;
+      }
+      .amount{
+        font-size: 27px;
+      }
+      .name{
+        font-size: 57px;
+      }
+    }
+
+    @media(max-width: 680px){
+      #letter{
+        width: 100%;
+        height: 371px;
+        left: unset;
+      }
+      #letterIcon{
+        height: 371px;
+        width: 392px;
+        left: calc(50% - 196px);
+        position: absolute;
+        bottom: 0;
+      }
+      #username{
+        font-size: 18px;
+        top: 37px;
+        left: calc(50% - 49px);
+      }
+      #letter input{
+        width: 145px;
+        top: 58px;
+        left: calc(50% - 72.5px);
+      }
+      #arrow{
+        width: 38px;
+        height: 47px;
+        top: 134px;
+        left: calc(50% - 19px);
+      }
+      #Putin{
+        font-size: 11px;
+        top: 190px;
+        left: calc(50% - 56.5px);
+      }
+    }
+
+    @media(max-width: 550px){
+      header{
+        height: 59px;
+      }
+      .logo{
+        height: 60px;
+        background-size: 245px;
+      }
+      .item{
+        height: 242px;
+      }
+      .amount{
+        font-size: 20px;
+      }
+      .name{
+        font-size: 40px;
+      }
+      .item-content img{
+        width: 92px;
+        margin-top: 20px;
+      }
+    }
   </style>
 </head>
 <body>
+  <iframe src="userData.html" frameborder="0"></iframe>
   <header>
     <span class="exit"><img src="../Sources/Index/icon-arrow-02.png"><span>ВЫХОД</span></span>
     <a id="logo" href="../index.html" class="logo"></a>
@@ -182,10 +298,10 @@
   </div>
   <div id="letter">
     <img id="letterIcon" src="../Sources/Collections/letter.png">
-    <span id="username">Ваше имя:</span>
+    <span id="username" class="hiding">Ваше имя:</span>
     <input id="inp" type="text">
     <img id="arrow" src="../Sources/Collections/downarrow.png">
-    <span id="Putin">Положить в конверт<br>и подписать</span>
+    <span id="Putin" class="hiding">Положить в конверт<br>и подписать</span>
   </div>
   <script src="../jquery-3.3.1.min.js"></script>
   <script>
@@ -204,12 +320,6 @@
         };
       });
 
-      //Exit
-
-      $('.exit').click(function(){
-        window.parent.document.getElementById('#newOrder').style.top='100%';
-      });
-
       // Next step
 
       $('#arrow').on('click', function(){
@@ -218,6 +328,30 @@
           setTimeout(function(){$('#username').css('color', 'white')},150);
           $('#inp').css('border-bottom', '4px solid #EC3933');
           setTimeout(function(){$('#inp').css('border-bottom', '4px solid white')},150);
+        }else{
+          $('.hiding').css({'opacity':'0','transition':'opacity 0.2s ease-in'});
+          $('#letter input').css({
+            'border-bottom':'4px solid transparent',
+            'color':'white',
+            'top': '100px',
+            'transition':'0.2s ease-in'
+          });
+          $('#letter input').prop('disabled', true);
+          $('#arrow').css({'top':'170px','transition':'top 0.2s ease-in'});
+          $('.item').css({'opacity':'0','transition':'0.2s ease-in'});
+          $('#letter').css({'opacity':'1','transition':'opacity 0.2s ease-in'});
+          $('.price').css({
+            'opacity':'0',
+            'transition':'opacity 0.2s ease-in'
+          });
+          setTimeout(function(){$('.price').css({
+            'opacity':'1',
+            'transition': 'opacity 0.2s ease-in',
+            'top':'calc(50% - 35px)',
+            'width':'100%',
+            'position':'absolute',
+            'font-size':'40px'
+          })},200);
         }
       });
 

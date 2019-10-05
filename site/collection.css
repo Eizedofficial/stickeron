@@ -44,6 +44,30 @@ aside{
     margin-top: 100px;
   }
 
+.iframe-exit{
+  display: none;
+  top: 0;
+  position: absolute;
+  height: 80px;
+  width: 243px;
+  z-index: 9999999;
+  background-color: #EC3933;
+  align-items: center;
+  font-family: Lack;
+  color: white;
+  font-size: 35px;
+  justify-content: space-evenly;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.i-login{
+  right: 0;
+}
+  .i-login img{
+    transform: rotate(180deg);
+  }
+
 #backToTheFuture{
   top: -8.6vw;
 }
