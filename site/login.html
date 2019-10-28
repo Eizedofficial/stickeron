@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="login.css">
+  <title>Войти</title>
+</head>
+<body>
+  <header>
+    <div class="exit"><img src="Sources/login-arrow.svg" alt="arrow"><span>ВЫХОД</span></div>
+    <div id="logo"><a href="index.html"></a></div>
+    <div class="exit"></div>
+  </header>
+  <div class="straighter">
+    <main>
+      <span>Логин, телефон или email</span>
+      <br>
+      <input type="email">
+      <br>
+      <span>Пароль</span>
+      <br>
+      <input type="password">
+      <br>
+      <button>Посмотреть мои заказы</button>
+    </main>
+  </div>
+  <div id="message">Сделай заказ и мы сами тебя зарегистрируем</div>
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+  <script type="text/javascript">
+    var currentcolor = 1;
+    var timer = setInterval(function(){document.getElementById('logo').style.backgroundImage="url('Sources/logo-"+(((++currentcolor)%3)+1)+"_white.svg')"},1000);
+  </script>
+</body>
+</html>

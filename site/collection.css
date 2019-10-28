@@ -517,7 +517,10 @@ button{
 
 @media (max-width: 615px) {
   footer{
-    margin-top: 0;
+    margin-top: 55px;
+  }
+  .social-network img {
+    height: 25px;
   }
 }
 @media(max-width: 704px){

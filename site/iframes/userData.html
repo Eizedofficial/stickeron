@@ -78,9 +78,7 @@
       background-repeat: no-repeat;
       background-position: center;
       height: 289px;
-      width: 100%;
-      position: absolute;
-      top: calc(50% - 264px);
+      width: 896px;
       padding-top: 290px;
 
     }
@@ -162,6 +160,130 @@
         width: 418px;
         margin-left: 20px;
       }
+    #promise{
+      margin-top: 82px;
+      position: absolute;
+      width: 100%;
+      left: 0;
+      text-align: center;
+      font-family: Casper;
+      font-size: 24px;
+      line-height: 35px;
+    }
+    #send{
+      margin-left: 52px;
+      display: flex;
+      flex-direction: column;
+    }
+      #send img{
+        cursor: pointer;
+      }
+      #send span{
+        display: inline-block;
+        margin-top: 20px;
+        font-family: Casper;
+        font-size: 22px;
+        text-align: center;
+        width: 100%;
+      }
+    .content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: calc(50% - 350px);
+      width: 100%;
+    }
+    .promise{
+      display: none;
+    }
+    .m-delivery-data{
+      display: none;
+    }
+
+      @media (max-width: 1250px){
+        input{
+          font-size: 22px;
+        }
+
+        .i1_1{
+          width: 150px;
+        }
+        .i1_2{
+          width: 201px;
+        }
+        .t1_2{
+          margin-left: 137px;
+        }
+
+        .i2_1{
+          width: 150px;
+        }
+        .i2_2{
+          width: 199px;
+          margin-left: 10px;
+        }
+        .i2_3{
+          width: 57px;
+          margin-left: 10px;
+        }
+        .i2_4{
+          width: 106px;
+          margin-left: 10px;
+        }
+        .t2_2{
+          margin-left: 122px;
+        }
+        .t2_3{
+          margin-left: 100px;
+        }
+
+        .i3_1{
+          width: 211px;
+        }
+        .i3_2{
+          width: 349px;
+          margin-left: 10px;
+        }
+        .t3_2{
+          margin-left: 153px;
+        }
+
+        .delivery-data{
+          width: 685px;
+          padding-left: 15px;
+          background-size: 760px;
+          padding-top: 250px;
+        }
+        #promise{
+          display: none;
+        }
+        .content{
+          flex-direction: column;
+        }
+        #send{
+          flex-direction: row-reverse;
+          align-items: center;
+          margin-top: 20px;
+        }
+          #send img{
+            margin-left: 22px;
+            width: 97px;
+            height: 97px;
+          }
+          #send span{
+            margin-top: 0;
+          }
+        .promise{
+          display: block;
+          position: absolute;
+          bottom: 30px;
+          font-family: Casper;
+          font-size: 26px;
+          width: 100%;
+          text-align: center;
+        }
+      }
 
       @media (max-width: 1080px) {
         header span{
@@ -172,7 +294,67 @@
         }
       }
 
-      @media(max-width: 800px){
+      @media(max-width: 700px){
+        .delivery-data{
+          display: none;
+        }
+        .content{
+          top: unset;
+        }
+        .m-delivery-data{
+          display: flex;
+          height: 685px;
+          width: 100%;
+          background-repeat: no-repeat;
+          background-image: url("../Sources/Collections/long-letter.png");
+          background-position: center;
+          flex-direction: column;
+          padding-top: 115px;
+        }
+          .m-delivery-data input{
+            width: 249px;
+            height: 43px;
+            padding-left: 10px;
+            margin: 0 auto;
+          }
+          .m-delivery-data span{
+            display: inline-block;
+            margin-top: 11px;
+            margin-bottom: 5px;
+            margin-left: calc(50% - 120px);
+            font-family: Casper;
+            font-size: 20px;
+            color: black;
+          }
+          .h-inp{
+            width: 57px !important;
+            margin-left: calc(50% - 129.5px) !important;
+          }
+          .a-inp{
+            width: 168px !important;
+            margin-left: 10px !important;
+          }
+          .a-txt{
+            margin-left: 40px !important;
+          }
+
+        #send{
+          flex-direction: column;
+          margin-left: 0;
+          margin-top: 35px;
+        }
+          #send img{
+            margin-left: 0;
+          }
+          #send span{
+            margin-top: 15px;
+          }
+        .promise{
+          font-size: 13px;
+          position: absolute;
+          top: 1240px;
+          height: 50px;
+        }
       }
 
       @media(max-width: 550px){
@@ -193,28 +375,56 @@
     <span class="login"><span>ВХОД</span><img src="../Sources/Index/icon-arrow-02.png"></span>
   </header>
   <div class="total-price">189руб.</div>
-  <div class="delivery-data">
-    <div class="data str1">
-      <span class="t1_1">Имя</span><span class="t1_2">Фамилия</span><br>
-      <input type="text" class="i1_1"><input type="text" class="i1_2">
+  <div class="content">
+    <div class="delivery-data">
+      <div class="data str1">
+        <span class="t1_1">Имя</span><span class="t1_2">Фамилия</span><br>
+        <input type="text" class="i1_1" id="name"><input type="text" class="i1_2">
+      </div>
+      <div class="data str2">
+        <span class="t2_1">Город</span>
+        <span class="t2_2">Улица/пр-кт</span>
+        <span class="t2_3">Дом</span>
+        <span class="t2_4">Квартира/<br>корпус</span><br>
+        <input type="text" class="i2_1">
+        <input type="text" class="i2_2">
+        <input type="text" class="i2_3">
+        <input type="text" class="i2_4">
+      </div>
+      <div class="data str3">
+        <span class="t3_1">Телефон</span>
+        <span class="t3_2">Электронная почта</span><br>
+        <input type="text" class="i3_1">
+        <input type="text" class="i3_2">
+      </div>
+      <div id="promise">Мы используем эту информацию <br>только для организации доставки и никому не передаём</div>
     </div>
-    <div class="data str2">
-      <span class="t2_1">Город</span>
-      <span class="t2_2">Улица/пр-кт</span>
-      <span class="t2_3">Дом</span>
-      <span class="t2_4">Квартира/<br>корпус</span><br>
-      <input type="text" class="i2_1">
-      <input type="text" class="i2_2">
-      <input type="text" class="i2_3">
-      <input type="text" class="i2_4">
+    <div class="m-delivery-data">
+      <span>Имя</span>
+      <input type="text">
+      <span>Фамилия</span>
+      <input type="text">
+      <span>Город</span>
+      <input type="text">
+      <span>Улица/пр-кт</span>
+      <input type="text">
+      <div>
+        <span>Дом</span>
+        <span class="a-txt">Квартира<br>/корпус</span><br>
+        <input type="text" class="h-inp">
+        <input type="text" class="a-inp">
+      </div>
+      <span>Телефон</span>
+      <input type="text">
+      <span>Электронная почта</span>
+      <input type="text">
     </div>
-    <div class="data str3">
-      <span class="t3_1">Телефон</span>
-      <span class="t3_2">Электронная почта</span><br>
-      <input type="text" class="i3_1">
-      <input type="text" class="i3_2">
+    <div id="send">
+      <img src="../Sources/Collections/send.png" alt="">
+      <span>Оплатить<br>и отправить</span>
     </div>
   </div>
+  <div class="promise">Мы используем эту информацию <br>только для организации доставки и никому не передаём</div>
   <script src="../jquery-3.3.1.min.js"></script>
   <script>
     $(window).on('load', function(){
