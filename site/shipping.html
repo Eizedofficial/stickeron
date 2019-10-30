@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="shipping.css">
+  <title>Шип</title>
+</head>
+<body>
+  <header>
+    <div class="exit"><img src="Sources/login-arrow.svg" alt="arrow"><span>ВЫХОД</span></div>
+    <div id="logo"><a href="index.html"></a></div>
+    <div class="exit"></div>
+  </header>
+  <section class="shipping">
+    <h1>Доставка</h1>
+    <img src="Sources/russian-post.png" alt="Почта">
+    <div class="ship-info">Доставка бесплатна и осуществляется только через<br>почту России. Отправляем по субботам в 18:00</div>
+  </section>
+  <aside></aside>
+  <section class="return">
+    <h1>Возврат и обмен</h1>
+    <div class="control">
+      <div class="images">
+        <img src="Sources/camera.png" alt="camera">
+        <img src="Sources/arrow.png" alt="arrow">
+        <img src="Sources/control.png" alt="control"><br>
+      </div>
+      <div class="text">
+        <div>Каждая отправленная<br>партия фотографируется</div>
+        <div>и заклеивается пломбой<br>девственности конверта</div>
+      </div>
+    </div>
+    <div class="refund">
+      <img src="Sources/refund.png" alt="">
+      <div>Если по каким либо причинам вам попал некачественный, повреждённый товар, мы отправим вам аналогичный.
+      <br><span>Необходимо написать отказ на почте</span></div>
+    </div>
+  </section>
+  <aside></aside>
+  <footer id="footer">
+    <a href="https://telegram.com" class="social-network"><img src="Sources/Index/telegram.svg"></a>
+    <a href="https://instagram.com" class="social-network"><img src="Sources/Index/instagram.svg"></a>
+    <a href="https://vk.com" class="social-network"><img src="Sources/Index/vk.svg"></a>
+    <a href="https://facebook.com" class="social-network"><img src="Sources/Index/facebook.svg"></a>
+  </footer>
+  <script type="text/javascript">
+    var currentcolor = 1;
+    var timer = setInterval(function(){document.getElementById('logo').style.backgroundImage="url('Sources/logo-"+(((++currentcolor)%3)+1)+"_white.svg')"},1000);
+  </script>
+</body>
+</html>
