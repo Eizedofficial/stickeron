@@ -86,11 +86,11 @@ $('header button').on('click', function(){
 
 });
 var itemsNum = $('#order').children().length;
-for (var i = 1; i < itemsNum+1; i++) {
+setTimeout(function(){for (var i = 1; i < itemsNum+1; i++) {
   $('#stripes').append("<div class='s_item' id='s_item"+i+"'></div>");
   var item = $('.item_order:nth-child('+i+')');
   $('#s_item'+i).css({'top' : item.offset().top+'px'});
-}
+}},1)
 $(window).resize(function(){
   for (var i = 1; i < itemsNum+1; i++) {
     var item = $('.item_order:nth-child('+i+')');
@@ -105,32 +105,36 @@ $(window).scroll(function(){
   }
 });
 
-// To open Iframe
+// To open cart
 
 $('#buyButton').on('click', function(){
-  $('#newOrder').css({'top':0,'display':'block'});
+  $('.cart').css('display','block');
+  setTimeout(function(){$('.cart').css('top',0)},1);
   $('body').css({
     'overflow' : 'hidden',
     'margin-top' : '-50%',
     'transition' : 'margin-top 0.2s ease-in'
   });
-  setTimeout(function(){$('#iExit').css('display', 'flex')},200);
+  setTimeout(function(){$('#letter').css('bottom',0)},300)
   setTimeout(function(){$(window).scrollTop(0)},200);
+  for (var i = 1; i < itemsNum+1; i++) {
+    var item = $('.item_order:nth-child('+i+')');
+    $('#s_item'+i).css({'top' : item.offset().top+'px'});
+  }
   isCartOpened=true;
 });
 
-// To close Iframe
+// To exit cart
 
-function closeFrame(){
-  $('#iExit').css('display','none');
-  setTimeout(function(){$('iframe').hide()},200);
-  $('#newOrder').css('top', '100%');
+$('#cartExit').on('click',function(){
+  $('#letter').css('bottom','-100%');
+  $('.cart').css('top','100%');
+  setTimeout(function(){$('.cart').css('display','none')},200);
   $('body').css({
     'overflow-y' : 'scroll',
-    'margin-top' : '0'
+    'margin-top' : 0
   });
-  isCartOpened=false;
-};
+});
 
 // To get cart status
 
