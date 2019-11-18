@@ -74,7 +74,7 @@
       justify-content: center;
     }
     .delivery-data{
-      background-image: url('../Sources/Collections/envelope.png');
+      background-image: url('Sources/Collections/envelope.png');
       background-repeat: no-repeat;
       background-position: center;
       height: 289px;
@@ -429,9 +429,7 @@
   <script>
     $(window).on('load', function(){
       var quanity = 1;
-      var currentcolor = 1;
-      var timer = setInterval(function(){document.getElementById('logo').style.backgroundImage="url('../Sources/logo-"+(((++currentcolor)%3)+1)+"_white.svg')"},1000);
-      $('.one-more img').on('click', function(){
+      var currentcolor = 1
         $('#item').clone(true, true).attr('id', 'item'+quanity++).appendTo('body');
         $('.price').text(189*quanity+" руб");
       });

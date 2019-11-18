@@ -146,3 +146,8 @@ function cartStatus(isCartOpened){
     return 'unset';
   }
 }
+
+// To change logo in userData
+
+var user_currentcolor = 1;
+var timer = setInterval(function(){document.getElementById('user_logo').style.backgroundImage="url('Sources/logo-"+(((++user_currentcolor)%3)+1)+"_white.svg')"},1000);

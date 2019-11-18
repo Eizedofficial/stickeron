@@ -6,7 +6,7 @@
 .cart{
   background-color: #EC3933;
   overflow-x: hidden;
-  overflow-y: auto !important;
+  overflow-y: auto;
   position: absolute;
   width: 100%;
   top: 100%;
@@ -112,6 +112,12 @@
 /* PRICE! */
 
 /* !ITEM */
+
+.items{
+  max-height: calc(100% - 150px);
+  overflow-y: auto;
+  outline: 1px solid white;
+}
 
 .cart .item{
   height: 427px;

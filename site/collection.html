@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="collection.css">
     <link rel="stylesheet" href="collection-cart.css">
+    <link rel="stylesheet" href="user-data.css">
     <title>KANDINSKY</title>
   </head>
   <body>
@@ -16,14 +17,16 @@
         <a href="login.html" class="login"><span>ВХОД</span><img src="Sources/Index/icon-arrow-02.png"></a>
       </div>
       <div class="price">189 руб</div>
-      <div class="item" id="item">
-        <span class="one-more"><img src="Sources/Collections/crossrow_blue.png"></span>
-        <div class="item-content">
-          <span class="amount">12 стикеров</span>
-          <span class="name">KANDINSKY</span>
-          <img src="Sources/Collections/pack.png">
+      <div class="items">
+        <div class="item" id="item">
+          <span class="one-more"><img src="Sources/Collections/crossrow_blue.png"></span>
+          <div class="item-content">
+            <span class="amount">12 стикеров</span>
+            <span class="name">KANDINSKY</span>
+            <img src="Sources/Collections/pack.png">
+          </div>
+          <span class="delete"><img src="Sources/Collections/crossrow_red.png"></span>
         </div>
-        <span class="delete"><img src="Sources/Collections/crossrow_red.png"></span>
       </div>
       <div id="letter">
         <img class="letterIcon" src="Sources/Collections/letter.png">
@@ -33,6 +36,63 @@
         <input spellcheck="false" id="inp" type="text">
         <img id="arrow" src="Sources/Collections/downarrow.png">
         <span id="Putin" class="hiding">Положить в конверт<br>и подписать</span>
+      </div>
+      <div id="userData" class="user-data">
+        <div class="user_header">
+          <span class="user_exit"><img src="Sources/Index/icon-arrow-02.png"><span>НАЗАД</span></span>
+          <a id="user_logo" href="index.html" class="user_logo"></a>
+          <span class="user_login"></span>
+        </div>
+        <div class="total-price">189руб.</div>
+        <div class="content">
+          <div class="delivery-data">
+            <div class="data str1">
+              <span class="t1_1">Имя</span><span class="t1_2">Фамилия</span><br>
+              <input type="text" class="i1_1" id="name"><input type="text" class="i1_2">
+            </div>
+            <div class="data str2">
+              <span class="t2_1">Город</span>
+              <span class="t2_2">Улица/пр-кт</span>
+              <span class="t2_3">Дом</span>
+              <span class="t2_4">Квартира/<br>корпус</span><br>
+              <input type="text" class="i2_1">
+              <input type="text" class="i2_2">
+              <input type="text" class="i2_3">
+              <input type="text" class="i2_4">
+            </div>
+            <div class="data str3">
+              <span class="t3_1">Телефон</span>
+              <span class="t3_2">Электронная почта</span><br>
+              <input type="text" class="i3_1">
+              <input type="text" class="i3_2">
+            </div>
+            <div id="promise">Мы используем эту информацию <br>только для организации доставки и никому не передаём</div>
+          </div>
+          <div class="m-delivery-data">
+            <span>Имя</span>
+            <input type="text">
+            <span>Фамилия</span>
+            <input type="text">
+            <span>Город</span>
+            <input type="text">
+            <span>Улица/пр-кт</span>
+            <input type="text">
+            <div>
+              <span>Дом</span>
+              <span class="a-txt">Квартира<br>/корпус</span><br>
+              <input type="text" class="h-inp">
+              <input type="text" class="a-inp">
+            </div>
+            <span>Телефон</span>
+            <input type="text">
+            <span>Электронная почта</span>
+            <input type="text">
+          </div>
+          <div id="send">
+            <img src="Sources/Collections/send.png" alt="">
+            <span>Оплатить<br>и отправить</span>
+          </div>
+        </div>
       </div>
     </div>
     <header>
